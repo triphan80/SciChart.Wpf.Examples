@@ -11,7 +11,9 @@
 
 We've taken the SciChart WPF v5 Examples and retrofitted SciChart WPF v6 SDK beta into them to test backward compatibility. 
 
-**This branch should not be used for your usage of SciChart, It is intended for the SciChart team to test breaking changes in SciChart SDK v6 and to demonstrate those changes to our users.** 
+The bulk of the upgrade to make v5 examples compatible with v6 can be found [in this commit, SHA=394b4d5bff4f89769a908e4024f4016b9c9e619](https://github.com/ABTSoftware/SciChart.Wpf.Examples/commit/5394b4d5bff4f89769a908e4024f4016b9c9e619)
+
+> **NOTE: This branch should not be used for your usage of SciChart, It is intended for the SciChart team to test breaking changes in SciChartSDK v6 and to demonstrate those changes to our users.**
 
 ## Note: NuGet feed setup
 
