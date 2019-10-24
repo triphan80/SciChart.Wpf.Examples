@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows;
@@ -24,7 +25,10 @@ namespace SciChart.Examples.Demo
 
         public App()
         {
-            SciChartSurface.SetRuntimeLicenseKey(... Set a JSON v6 runtime key here ...);
+            // If you get an error here about missing license key, then place a file in your solution called LicenseKey.json and 
+            // set Copy to Output = Always 
+            using (var lk = File.OpenText("LicenseKey.json"))
+                SciChartSurface.SetRuntimeLicenseKey(lk.ReadToEnd());
 
             Startup += Application_Startup;
             Exit += OnExit;
