@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SciChart.Examples.Demo</RootNamespace>
     <AssemblyName>SciChart.Examples.Demo</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -17,7 +17,8 @@
     <RestorePackages>true</RestorePackages>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <NuGetPackageImportStamp>02d27cea</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -224,6 +225,27 @@
     <Reference Include="ReachFramework" />
     <Reference Include="RestSharp">
       <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SciChart.Charting, Version=6.0.0.12596, Culture=neutral, PublicKeyToken=b55dd9efe817e823, processorArchitecture=MSIL">
+      <HintPath>..\packages\SciChart.6.0.0.12596-beta\lib\net452\SciChart.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="SciChart.Charting.DrawingTools, Version=6.0.0.12596, Culture=neutral, PublicKeyToken=b55dd9efe817e823, processorArchitecture=MSIL">
+      <HintPath>..\packages\SciChart.DrawingTools.6.0.0.12596-beta\lib\net452\SciChart.Charting.DrawingTools.dll</HintPath>
+    </Reference>
+    <Reference Include="SciChart.Charting3D, Version=6.0.0.12596, Culture=neutral, PublicKeyToken=b55dd9efe817e823, processorArchitecture=MSIL">
+      <HintPath>..\packages\SciChart3D.6.0.0.12596-beta\lib\net452\SciChart.Charting3D.dll</HintPath>
+    </Reference>
+    <Reference Include="SciChart.Core, Version=6.0.0.12596, Culture=neutral, PublicKeyToken=b55dd9efe817e823, processorArchitecture=MSIL">
+      <HintPath>..\packages\SciChart.6.0.0.12596-beta\lib\net452\SciChart.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SciChart.Data, Version=6.0.0.12596, Culture=neutral, PublicKeyToken=b55dd9efe817e823, processorArchitecture=MSIL">
+      <HintPath>..\packages\SciChart.6.0.0.12596-beta\lib\net452\SciChart.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SciChart.Drawing, Version=6.0.0.12596, Culture=neutral, PublicKeyToken=b55dd9efe817e823, processorArchitecture=MSIL">
+      <HintPath>..\packages\SciChart.6.0.0.12596-beta\lib\net452\SciChart.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="SciChart.Drawing.DirectX, Version=6.0.0.12596, Culture=neutral, PublicKeyToken=b55dd9efe817e823, processorArchitecture=MSIL">
+      <HintPath>..\packages\SciChart.DirectX.6.0.0.12596-beta\lib\net452\SciChart.Drawing.DirectX.dll</HintPath>
     </Reference>
     <Reference Include="SciChart.Wpf.UI, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SciChart.Wpf.UI.1.0.4\lib\net40\SciChart.Wpf.UI.dll</HintPath>
@@ -659,10 +681,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SciChart.Charting.3D\SciChart.Charting3D.csproj">
-      <Project>{c0c603a4-c4a1-43bd-81bf-36a8d4ab613f}</Project>
-      <Name>SciChart.Charting3D</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SciChart.Examples.ExternalDependencies\SciChart.Examples.ExternalDependencies.csproj">
       <Project>{113EBB05-8D70-4B05-BB73-121A552A5754}</Project>
       <Name>SciChart.Examples.ExternalDependencies</Name>
@@ -740,6 +758,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\packages\SciChart.DirectX.6.0.0.12596-beta\build\SciChart.DirectX.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SciChart.DirectX.6.0.0.12596-beta\build\SciChart.DirectX.targets'))" />
   </Target>
   <PropertyGroup>
     <PostBuildEvent>
@@ -764,39 +783,5 @@
       <HintPath>..\Libs\WPFToolkit\System.Windows.Controls.Input.Toolkit.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Core">
-      <HintPath>..\packages\SciChart.5.4.1.12181\lib\net45\SciChart.Core.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Data">
-      <HintPath>..\packages\SciChart.5.4.1.12181\lib\net45\SciChart.Data.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Drawing">
-      <HintPath>..\packages\SciChart.5.4.1.12181\lib\net45\SciChart.Drawing.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Charting">
-      <HintPath>..\packages\SciChart.5.4.1.12181\lib\net45\SciChart.Charting.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Charting.DrawingTools">
-      <HintPath>..\packages\SciChart.DrawingTools.5.4.1.12181\lib\net45\SciChart.Charting.DrawingTools.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Drawing.DirectX">
-      <HintPath>..\packages\SciChart.DirectX.5.4.1.12181\lib\net45\SciChart.Drawing.DirectX.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Charting3D">
-      <HintPath>..\packages\SciChart3D.5.4.1.12181\lib\net45\SciChart.Charting3D.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+  <Import Project="..\packages\SciChart.DirectX.6.0.0.12596-beta\build\SciChart.DirectX.targets" Condition="Exists('..\packages\SciChart.DirectX.6.0.0.12596-beta\build\SciChart.DirectX.targets')" />
 </Project>

@@ -54,7 +54,7 @@ namespace SciChart.Examples.Examples.InspectDatapoints
             foreach(var renderableSeries in sciChartSurface.RenderableSeries)
             {
                 // Get hit-test the RenderableSeries using interpolation
-                var hitTestInfo = renderableSeries.HitTest(hitTestPoint, true);
+                var hitTestInfo = renderableSeries.HitTestProvider.HitTest(hitTestPoint, true);
 
                 if (hitTestInfo.IsHit)
                 {

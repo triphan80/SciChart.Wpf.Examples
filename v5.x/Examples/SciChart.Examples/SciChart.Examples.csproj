@@ -9,9 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SciChart.Examples</RootNamespace>
     <AssemblyName>SciChart.Examples</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -3504,38 +3506,17 @@ if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="SciChart.Core">
-      <HintPath>..\packages\SciChart.5.4.1.12181\lib\net45\SciChart.Core.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Data">
-      <HintPath>..\packages\SciChart.5.4.1.12181\lib\net45\SciChart.Data.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Drawing">
-      <HintPath>..\packages\SciChart.5.4.1.12181\lib\net45\SciChart.Drawing.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Charting">
-      <HintPath>..\packages\SciChart.5.4.1.12181\lib\net45\SciChart.Charting.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Charting.DrawingTools">
-      <HintPath>..\packages\SciChart.DrawingTools.5.4.1.12181\lib\net45\SciChart.Charting.DrawingTools.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Drawing.DirectX">
-      <HintPath>..\packages\SciChart.DirectX.5.4.1.12181\lib\net45\SciChart.Drawing.DirectX.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SciChart.Charting3D">
-      <HintPath>..\packages\SciChart3D.5.4.1.12181\lib\net45\SciChart.Charting3D.dll</HintPath>
-    </Reference>
+    <PackageReference Include="SciChart">
+      <Version>6.0.0.12596-beta</Version>
+    </PackageReference>
+    <PackageReference Include="SciChart.DirectX">
+      <Version>6.0.0.12596-beta</Version>
+    </PackageReference>
+    <PackageReference Include="SciChart.DrawingTools">
+      <Version>6.0.0.12596-beta</Version>
+    </PackageReference>
+    <PackageReference Include="SciChart3D">
+      <Version>6.0.0.12596-beta</Version>
+    </PackageReference>
   </ItemGroup>
 </Project>

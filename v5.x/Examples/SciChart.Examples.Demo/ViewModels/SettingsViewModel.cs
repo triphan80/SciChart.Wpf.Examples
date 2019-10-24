@@ -10,9 +10,11 @@ using SciChart.Drawing.DirectX.Context.D3D11;
 using SciChart.Drawing.HighSpeedRasterizer;
 using SciChart.Charting.Visuals.TradeChart;
 using SciChart.Charting3D;
+using SciChart.Drawing.VisualXcceleratorRasterizer;
 using SciChart.Examples.Demo.Helpers.Navigation;
 using SciChart.Wpf.UI.Reactive;
 using SciChart.Wpf.UI.Reactive.Observability;
+using FullScreenAntiAliasingMode = SciChart.Charting3D.FullScreenAntiAliasingMode;
 
 namespace SciChart.Examples.Demo.ViewModels
 {

@@ -28,19 +28,19 @@ namespace SciChart.Examples.Demo.ViewModels
 
         public void ExampleChanged()
         {
-            IsSmile = _parent.Usage.FeedbackType.GetValueOrDefault(ExampleFeedbackType.Frown) == ExampleFeedbackType.Smile;
-            IsFrown = _parent.Usage.FeedbackType.GetValueOrDefault(ExampleFeedbackType.Smile) == ExampleFeedbackType.Frown;
-            FeedbackEmail = _parent.Usage.Email;
-            if (!string.IsNullOrEmpty(_parent.Usage.FeedbackText))
-            {
-                FeedbackSubject = _parent.Usage.FeedbackText.Contains(":") ? _parent.Usage.FeedbackText.Substring(0, _parent.Usage.FeedbackText.IndexOf(":")) : "";
-                FeedbackContent = _parent.Usage.FeedbackText.Contains(":") ? _parent.Usage.FeedbackText.Substring(_parent.Usage.FeedbackText.IndexOf(":") + 1) : _parent.Usage.FeedbackText;
-            }
-            else
-            {
-                FeedbackSubject = null;
-                FeedbackContent = null;
-            }
+//            IsSmile = _parent.Usage.FeedbackType.GetValueOrDefault(ExampleFeedbackType.Frown) == ExampleFeedbackType.Smile;
+//            IsFrown = _parent.Usage.FeedbackType.GetValueOrDefault(ExampleFeedbackType.Smile) == ExampleFeedbackType.Frown;
+//            FeedbackEmail = _parent.Usage.Email;
+//            if (!string.IsNullOrEmpty(_parent.Usage.FeedbackText))
+//            {
+//                FeedbackSubject = _parent.Usage.FeedbackText.Contains(":") ? _parent.Usage.FeedbackText.Substring(0, _parent.Usage.FeedbackText.IndexOf(":")) : "";
+//                FeedbackContent = _parent.Usage.FeedbackText.Contains(":") ? _parent.Usage.FeedbackText.Substring(_parent.Usage.FeedbackText.IndexOf(":") + 1) : _parent.Usage.FeedbackText;
+//            }
+//            else
+//            {
+//                FeedbackSubject = null;
+//                FeedbackContent = null;
+//            }
 
 
             FrownVisible = false;

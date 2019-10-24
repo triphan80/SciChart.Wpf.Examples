@@ -4,6 +4,7 @@ using System.Threading;
 using System.Windows;
 using SciChart.Examples.Demo.Helpers.UsageTracking;
 using Microsoft.Practices.Unity;
+using SciChart.Charting.Visuals;
 using SciChart.Examples.ExternalDependencies.Common;
 using SciChart.Examples.ExternalDependencies.Controls.ExceptionView;
 using SciChart.Wpf.UI.Bootstrap;
@@ -23,6 +24,8 @@ namespace SciChart.Examples.Demo
 
         public App()
         {
+            SciChartSurface.SetRuntimeLicenseKey(... Set a JSON v6 runtime key here ...);
+
             Startup += Application_Startup;
             Exit += OnExit;
             DispatcherUnhandledException += App_DispatcherUnhandledException;
